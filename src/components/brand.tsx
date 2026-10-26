@@ -1,0 +1,2 @@
+import { ShieldCheck } from 'lucide-react';
+export function Brand({ compact = false }: { compact?: boolean }) { return <div className="flex items-center gap-2.5"><div className="grid h-9 w-9 place-items-center rounded-xl bg-white text-black"><ShieldCheck size={20} strokeWidth={2.2}/></div>{!compact && <div className="leading-tight"><div className="text-[15px] font-semibold tracking-tight">Warranty Wallet</div><div className="mt-1 text-[10px] tracking-[.15em] text-neutral-500 uppercase">Keep it covered</div></div>}</div>; }

@@ -1,0 +1,2 @@
+import { AuthForm } from '@/components/auth-form';
+export default async function LoginPage({searchParams}:{searchParams:Promise<{setup?:string}>}){const params=await searchParams;return <><AuthForm mode="login"/>{params.setup==='missing'&&<div className="fixed bottom-4 left-4 right-4 mx-auto max-w-lg rounded-lg border border-amber-900 bg-amber-950/70 p-3 text-center text-sm text-amber-100">Setup needed: create <code>.env.local</code> from <code>.env.example</code> and add your Supabase project values.</div>}</>;}
